@@ -1,0 +1,451 @@
+<!DOCTYPE html> 
+<html>  
+  <head>
+    <title>Synethstesia</title>
+    <link rel="stylesheet" href="css/piano.css" />
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+  </head>
+
+  <body>
+      
+      <div id="Back">
+          <p> <a href="Index.html">ABOUT THE CASIO CTK-451 MINI</a> </p>
+          </div>
+      
+      <div id="bkContainer">
+          
+          <div id="heading">
+          <p>CASIO</p>
+          </div>
+          
+          <div id="DB">
+              <div id="drums">
+          <p>RHYTHMS</p>
+              </div>
+              <p><button class="button1" onclick=
+              "playBeat1()">
+              Beat 1</button>
+              <button class="button2" onclick=
+              "playBeat2()">
+              Beat 2</button></p>
+          </div>
+          <div id="TB">
+              <div id="tones">
+          <p>TONES</p>
+              </div>
+              <p><button class="button3" onclick=
+              "switchOrgan()">
+              Tone 1</button>
+              <button class="button4" onclick=
+              "switchEPiano()">
+              Tone 2</button></p>
+          </div>
+          <div id="SB">
+              <div id="songs">
+          <p>SONGS</p>
+              </div>
+              <p><button class="button5" onclick=
+              "playSong1()">
+              Song 1</button>
+              <button class="button6" onclick=
+              "playSong2()">
+              Song 2</button></p>
+          </div>
+          
+      <div id="container">
+        
+          <div class="Do1" onclick="playDo1()"></div>
+          <div class="Re"
+          onclick="playRe()"></div>
+          <div class="Mi" onclick="playMi()"></div>
+          <div class="Fa" onclick="playFa()"></div>
+          <div class="Sol" onclick="playSol()"></div>
+          <div class="La" onclick="playLa()"></div>
+          <div class="Ti" onclick="playTi()"></div>
+          <div class="Do2" onclick="playDo2()"></div>
+          <div class ="b1"
+          onclick="playCs()"></div>
+          <div class ="b2"
+          onclick="playDs()"></div>
+          <div class ="b3"
+          onclick="playFs()"></div>
+          <div class ="b4"
+          onclick="playGs()"></div>
+          <div class ="b5"
+          onclick="playAs()"></div>
+      </div>
+        </div>
+<audio id="aDo1">
+  <source src="sounds/Do.m4a">
+</audio>
+<audio id="aRe">
+  <source src="sounds/Re%202.m4a">
+</audio>
+<audio id="aMi">
+  <source src="sounds/Mi.m4a">
+</audio>
+<audio id="aFa">
+  <source src="sounds/Fa.m4a">
+</audio>
+<audio id="aSol">
+  <source src="sounds/Sol.m4a">
+</audio>
+<audio id="aLa">
+  <source src="sounds/La.m4a">
+</audio>
+<audio id="aTi">
+  <source src="sounds/Ti.m4a">
+</audio>
+<audio id="aDo2">
+  <source src="sounds/Do2.m4a">
+</audio>
+<audio id="b1">
+  <source src="sounds/Cs.m4a">
+</audio>
+<audio id="b2">
+  <source src="sounds/Ds.m4a">
+</audio>
+<audio id="b3">
+  <source src="sounds/Fs.m4a">
+</audio>
+<audio id="b4">
+  <source src="sounds/Gs.m4a">
+</audio>
+<audio id="b5">
+  <source src="sounds/As.m4a">
+</audio>
+      <audio id="beat1">
+  <source src="sounds/ChicagoBlues.m4a">
+</audio>
+<audio id="beat2">
+  <source src="sounds/BosaNova.m4a">
+</audio>
+<audio id="song1">
+  <source src="sounds/LIB.m4a">
+</audio>
+<audio id="song2">
+  <source src="sounds/HOTRS.m4a">
+</audio>
+<audio id="organ1">
+  <source src="sounds/O1_2.m4a">
+</audio>
+<audio id="organ2">
+  <source src="sounds/O2.m4a">
+</audio>
+<audio id="organ3">
+  <source src="sounds/O3.m4a">
+</audio>
+<audio id="organ4">
+  <source src="sounds/O4.m4a">
+</audio>
+<audio id="organ5">
+  <source src="sounds/O5.m4a">
+</audio>
+<audio id="organ6">
+  <source src="sounds/O6.m4a">
+</audio>
+<audio id="organ7">
+  <source src="sounds/O7.m4a">
+</audio>
+<audio id="organ8">
+  <source src="sounds/O8.m4a">
+</audio>
+<audio id="organ9">
+  <source src="sounds/O9.m4a">
+</audio>
+<audio id="organ10">
+  <source src="sounds/O10.m4a">
+</audio>
+<audio id="organ11">
+  <source src="sounds/O11.m4a">
+</audio>
+<audio id="organ12">
+  <source src="sounds/O12.m4a">
+</audio>
+<audio id="organ13">
+  <source src="sounds/O13.m4a">
+</audio>
+<audio id="epiano1">
+  <source src="sounds/E1.m4a">
+</audio>
+<audio id="epiano2">
+  <source src="sounds/E2.m4a">
+</audio>
+<audio id="epiano3">
+  <source src="sounds/E3.m4a">
+</audio>
+<audio id="epiano4">
+  <source src="sounds/E4.m4a">
+</audio>
+<audio id="epiano5">
+  <source src="sounds/E5.m4a">
+</audio>
+<audio id="epiano6">
+  <source src="sounds/E6.m4a">
+</audio>
+<audio id="epiano7">
+  <source src="sounds/E7.m4a">
+</audio>
+<audio id="epiano8">
+  <source src="sounds/E8.m4a">
+</audio>
+<audio id="epiano9">
+  <source src="sounds/E9.m4a">
+</audio>
+<audio id="epiano10">
+  <source src="sounds/E10.m4a">
+</audio>
+<audio id="epiano11">
+  <source src="sounds/E11.m4a">
+</audio>
+<audio id="epiano12">
+  <source src="sounds/E12.m4a">
+</audio>
+<audio id="epiano13">
+  <source src="sounds/E13.m4a">
+</audio>
+      
+      <script>
+
+var playOrgan = false;
+var playElecPiano = false;
+
+function switchOrgan(){
+    if (playOrgan == false){
+        playOrgan = true;
+        playElecPiano = false;
+    }
+    else{
+        playOrgan = false;
+        playElecPiano = true;
+    }
+}
+function switchEPiano(){
+    if (playElecPiano == false){
+        playElecPiano = true;
+        playOrgan = false;
+    }
+    else{
+        playElecPiano = false;
+        playOrgan = true;
+    }
+}
+
+ /*         
+var SO1 = document.getElementById("organ1");
+
+function playOrgan() {
+    if(playOrgan() == true){
+        SO1O1.play();
+    }
+    else if(playOrgan() == false){
+        Do.play();
+    }
+}
+  */        
+
+  
+var DB1 = document.getElementById("beat1"); 
+function playBeat1() { 
+    DB1.play(); 
+} 
+var DB2 = document.getElementById("beat2"); 
+function playBeat2() { 
+    DB2.play(); 
+} 
+var SO1 = document.getElementById("song1"); 
+function playSong1() { 
+    SO1.play(); 
+} 
+var SO2 = document.getElementById("song2"); 
+function playSong2() { 
+    SO2.play(); 
+} 
+          
+
+var O1 = document.getElementById("organ1"); 
+var Do = document.getElementById("aDo1"); 
+var E1 = document.getElementById("epiano1");
+function playDo1() { 
+    if (playOrgan == false && playElecPiano == false){
+        Do.play(); 
+    }
+    if (playOrgan == true && playElecPiano == false){
+        O1.play();     
+    } 
+    if (playOrgan == false && playElecPiano == true){
+        E1.play();  
+    }
+}
+var O2 = document.getElementById("organ2"); 
+var bk1 = document.getElementById("b1"); 
+var E2 = document.getElementById("epiano2");
+function playCs() { 
+    if (playOrgan == false && playElecPiano == false){
+        bk1.play(); 
+    }
+    if (playOrgan == true && playElecPiano == false){
+        O2.play();     
+    } 
+    if (playOrgan == false && playElecPiano == true){
+        E2.play();  
+    }
+}
+var O3 = document.getElementById("organ3"); 
+var Re = document.getElementById("aRe"); 
+var E3 = document.getElementById("epiano3");
+function playRe() { 
+    if (playOrgan == false && playElecPiano == false){
+        Re.play(); 
+    }
+    if (playOrgan == true && playElecPiano == false){
+        O3.play();     
+    } 
+    if (playOrgan == false && playElecPiano == true){
+        E3.play();  
+    }
+}  
+var O4 = document.getElementById("organ4"); 
+var bk2 = document.getElementById("b2"); 
+var E4 = document.getElementById("epiano4");
+function playDs() { 
+    if (playOrgan == false && playElecPiano == false){
+        bk2.play(); 
+    }
+    if (playOrgan == true && playElecPiano == false){
+        O4.play();     
+    } 
+    if (playOrgan == false && playElecPiano == true){
+        E4.play();  
+    }
+} 
+var O5 = document.getElementById("organ5"); 
+var Mi = document.getElementById("aMi"); 
+var E5 = document.getElementById("epiano5");
+function playMi() { 
+    if (playOrgan == false && playElecPiano == false){
+        Mi.play(); 
+    }
+    if (playOrgan == true && playElecPiano == false){
+        O5.play();     
+    } 
+    if (playOrgan == false && playElecPiano == true){
+        E5.play();  
+    }
+} 
+var O6 = document.getElementById("organ6"); 
+var Fa = document.getElementById("aFa"); 
+var E6 = document.getElementById("epiano6");
+function playFa() { 
+    if (playOrgan == false && playElecPiano == false){
+        Fa.play(); 
+    }
+    if (playOrgan == true && playElecPiano == false){
+        O6.play();     
+    } 
+    if (playOrgan == false && playElecPiano == true){
+        E6.play();  
+    }
+} 
+var O7 = document.getElementById("organ7"); 
+var bk3 = document.getElementById("b3"); 
+var E7 = document.getElementById("epiano7");
+function playFs() { 
+    if (playOrgan == false && playElecPiano == false){
+        bk3.play(); 
+    }
+    if (playOrgan == true && playElecPiano == false){
+        O7.play();     
+    } 
+    if (playOrgan == false && playElecPiano == true){
+        E7.play();  
+    }
+} 
+var O8 = document.getElementById("organ8"); 
+var Sol = document.getElementById("aSol"); 
+var E8 = document.getElementById("epiano8");
+function playSol() { 
+    if (playOrgan == false && playElecPiano == false){
+        Sol.play(); 
+    }
+    if (playOrgan == true && playElecPiano == false){
+        O8.play();     
+    } 
+    if (playOrgan == false && playElecPiano == true){
+        E8.play();  
+    }
+} 
+var O9 = document.getElementById("organ9"); 
+var bk4 = document.getElementById("b4"); 
+var E9 = document.getElementById("epiano9");
+function playGs() { 
+    if (playOrgan == false && playElecPiano == false){
+        bk4.play(); 
+    }
+    if (playOrgan == true && playElecPiano == false){
+        O9.play();     
+    } 
+    if (playOrgan == false && playElecPiano == true){
+        E9.play();  
+    }
+}
+var O10 = document.getElementById("organ10");
+var La = document.getElementById("aLa"); 
+var E10 = document.getElementById("epiano10");
+function playLa() { 
+    if (playOrgan == false && playElecPiano == false){
+        La.play(); 
+    }
+    if (playOrgan == true && playElecPiano == false){
+        O10.play();     
+    } 
+    if (playOrgan == false && playElecPiano == true){
+        E10.play();  
+    }
+}
+var O11 = document.getElementById("organ11");
+var bk5 = document.getElementById("b5"); 
+var E11 = document.getElementById("epiano11");
+function playAs() { 
+    if (playOrgan == false && playElecPiano == false){
+        bk5.play(); 
+    }
+    if (playOrgan == true && playElecPiano == false){
+        O11.play();     
+    } 
+    if (playOrgan == false && playElecPiano == true){
+        E11.play();  
+    }
+}
+var O12 = document.getElementById("organ12");
+var Ti = document.getElementById("aTi"); 
+var E12 = document.getElementById("epiano12");
+function playTi() { 
+    if (playOrgan == false && playElecPiano == false){
+        Ti.play(); 
+    }
+    if (playOrgan == true && playElecPiano == false){
+        O12.play();     
+    } 
+    if (playOrgan == false && playElecPiano == true){
+        E12.play();  
+    }
+}
+var O13 = document.getElementById("organ13");
+var Do2 = document.getElementById("aDo2"); 
+var E13 = document.getElementById("epiano13");
+function playDo2() { 
+    if (playOrgan == false && playElecPiano == false){
+        Do2.play(); 
+    }
+    if (playOrgan == true && playElecPiano == false){
+        O13.play();     
+    } 
+    if (playOrgan == false && playElecPiano == true){
+        E13.play();  
+    }
+}        
+ </script>
+      
+  </body>
+</html> 

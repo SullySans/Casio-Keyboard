@@ -1,0 +1,269 @@
+body{
+    width: 1280px;
+    height: 850px;
+    background: white;
+}
+#bkContainer{
+    width: 1100px;
+    height: 770px;
+    background: #282828;
+    position: absolute;
+    margin-left: 90px;
+}
+#container{
+    width: 1000px;
+    height: 500px;
+    background: white;
+    margin-top: 200px;
+    margin-left: 50px;
+}
+#heading{
+    width: 30px;
+    height: 30px;
+    font-family: 'Do Hyeon', sans-serif;
+    color: white;
+    font-size: 50pt;
+    margin-top: -65px;
+    margin-left: 470px;
+}
+#Back{
+    width: 1280px;
+    height: 40px;
+    text-align: center;
+    font-size: 20pt;
+    background: #282828; 
+    font-family: 'Do Hyeon', sans-serif;
+    text-decoration: none;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+#drums{
+    width: 30px;
+    height: 30px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 25pt;
+    color: #10CB97;
+    margin-left: 67.5px;
+    margin-top: -25px;
+}
+#tones{
+    width: 30px;
+    height: 30px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 25pt;
+    color: #EA5E10;
+    margin-left: 85px;
+    margin-top: -25px;
+}
+#songs{
+    width: 30px;
+    height: 30px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 25pt;
+    color: #EB216F;
+    margin-left: 85px;
+    margin-top: -25px;
+}
+#DB{
+    width: 266.666667px;
+    height: 100px;
+    background: white;
+    margin: 50px;
+    float: left;
+}
+#SB{
+    width: 266.666667px;
+    height: 100px;
+    background: white;
+    margin: 50px;
+    float: left;
+}
+#TB{
+    width: 266.666667px;
+    height: 100px;
+    background: white;
+    margin: 50px;
+    float: left;
+}
+.button1{
+    background-color: #10CB97;
+    border: none;
+    color: white;
+    padding: 13.5px 16.5%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.button2{
+    background-color: #10CB97;
+    border: none;
+    color: white;
+    padding: 13.5px 16.6%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.button3{
+    background-color: #EA5E10;
+    border: none;
+    color: white;
+    padding: 13.5px 16.3%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.button4{
+    background-color: #EA5E10;
+    border: none;
+    color: white;
+    padding: 13.5px 16%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.button5{
+    background-color: #EB216F;
+    border: none;
+    color: white;
+    padding: 13.5px 16%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.button6{
+    background-color: #EB216F;
+    border: none;
+    color: white;
+    padding: 13.5px 15.4%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.Do1{
+    width: 12.5%;
+    height: 100%;
+    background: white;
+    float: left;
+}
+.Do1:hover{
+    background: #13A1EB;
+}
+.Re{
+    width: 12.5%;
+    height: 100%;
+    background: white;
+    float: left;
+}
+.Re:hover{
+    background: #0DF543;
+}
+.Mi{
+    width: 12.5%;
+    height: 100%;
+    background: white;
+    float: left;
+}
+.Mi:hover{
+    background: #DED710;
+}
+.Fa{
+    width: 12.5%;
+    height: 100%;
+    background: white;
+    float: left;
+}
+.Fa:hover{
+    background: #F58A05;
+}
+.Sol{
+    width: 12.5%;
+    height: 100%;
+    background: white;
+    float: left;
+}
+.Sol:hover{
+    background: #DE321C;
+}
+.La{
+    width: 12.5%;
+    height: 100%;
+    background: white;
+    float: left;
+}
+.La:hover{
+    background: #F513B3;
+}
+.Ti{
+    width: 12.5%;
+    height: 100%;
+    background: white;
+    float: left;
+}
+.Ti:hover{
+    background: #8D18EB;
+}
+.Do2{
+    width: 12.5%;
+    height: 100%;
+    background: white;
+    float: left;
+}
+.Do2:hover{
+    background: #13A1EB;
+}
+.b1{
+    width: 50px;
+    height: 300px;
+    background-color: #282828;
+    border-radius: 5px;
+    position: relative; top: -5px; left: 100px;
+}
+.b1:hover{
+    background: #10CB97;
+}
+.b2{
+    width: 50px;
+    height: 300px;
+    background-color: #282828;
+    border-radius: 5px;
+    position: relative; top: -305px; left: 225px; 
+}
+.b2:hover{
+    background: #76E62A;
+}
+.b3{
+    width: 50px;
+    height: 300px;
+    background-color: #282828;
+    border-radius: 5px;
+    position: relative; top: -605px; left: 475px; 
+}
+.b3:hover{
+    background: #EA5E10;
+}
+.b4{
+    width: 50px;
+    height: 300px;
+    background-color: #282828;
+    border-radius: 5px;
+    position: relative; top: -905px; left: 600px; 
+}
+.b4:hover{
+    background: #EB216F;
+}
+.b5{
+    width: 50px;
+    height: 300px;
+    background-color: #282828;
+    border-radius: 5px;
+    position: relative; top: -1205px; left: 725px; 
+}
+.b5:hover{
+    background: #C116CF;
+}
